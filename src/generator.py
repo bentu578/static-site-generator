@@ -31,3 +31,4 @@ def generate_pages_recursive(dir_path_content, template_path, dest_dir_path, bas
                 os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
                 generate_page(md_path, template_path, output_path, basepath)
+
