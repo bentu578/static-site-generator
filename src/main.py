@@ -10,4 +10,6 @@ def main():
     generate_pages_recursive("content", "template.html", output_dir, basepath)
 
 if __name__ == "__main__":
-    main()
+    base_path = sys.argv[1] if len(sys.argv) > 1 else "/"
+    clean_and_create_dir("docs")
+    generate_pages_recursive("content", "template.html", "docs", base_path)
